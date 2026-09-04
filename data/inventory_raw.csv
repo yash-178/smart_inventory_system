@@ -1,0 +1,74 @@
+product_id,product_name,category,supplier,stock_quantity,reorder_level,unit_price,unit_cost,lead_time_days,date_added,last_restocked_date
+P1000,Wireless Mouse,Electronics,Northline Traders,60.0,16.0,3621.05,2852.22,4,2025-03-12,02/07/2026
+P1001,USB-C Cable,Electronics,Prime Wholesale,0.0,10.0,1741.76,1025.89,4,2025-06-08,13/03/2026
+P1002,Bluetooth Speaker,Electronics,Northline Traders,60.0,9.0,7849.11,5496.56,7,2025-07-14,26/08/2026
+P1003,Laptop Stand,Electronics,Northline Traders,8.0,5.0,8741.22,6626.81,5,2025-04-02,26/04/2026
+P1004,Mechanical Keyboard,Electronics,Apex Distributors,40.0,9.0,1977.28,1237.9,3,2024-10-24,18/05/2026
+P1005,Webcam HD,Electronics,Prime Wholesale,3.0,5.0,2904.57,2041.81,6,2024-10-02,
+P1006,Power Bank 10000mAh,Electronics,Apex Distributors,90.0,17.0,3550.71,2357.73,3,2024-12-26,07/06/2026
+P1007,Smart Watch,Electronics,Metro Logistics,0.0,10.0,4822.42,3366.55,6,2025-04-11,08/06/2026
+P1008,Noise Cancelling Headphones,Electronics,,,5.0,0.0,3333.48,4,2025-01-17,09/08/2026
+P1009,HDMI Adapter,Electronics,Sunrise Vendors,-7.0,5.0,8704.44,6546.6,3,2024-09-24,27/06/2026
+P1010,External SSD 1TB,Electronics,apex distributors,3.0,5.0,,4147.94,5,2024-10-29,02/08/2026
+P1011,Router Dual Band,Electronics,Unity Merchants,15.0,5.0,695.74,540.82,7,2024-10-21,19/06/2026
+P1012,Basmati Rice 5kg,Groceries,Sunrise Vendors,-8.0,7.0,321.84,218.86,2,2025-06-25,22/08/2026
+P1013,Sunflower Oil 1L,Groceries,prime wholesale,1287.0,39.0,874.45,650.4,5,2025-06-20,05/07/2026
+P1014,Green Tea Box,Groceries,Northline Traders,3.0,5.0,562.24,438.81,7,2025-03-10,09/05/2026
+P1015,Almonds 500g,GROCERIES,Sunrise Vendors,25.0,,97.99,61.86,2,2025-01-22,04/06/2026
+P1016,Whole Wheat Flour 5kg,Groceries,prime wholesale,15.0,5.0,0.0,483.32,5,2025-06-24,31/03/2026
+P1017,Organic Honey 250g,Groceries,Global Supply Co.,3.0,5.0,178.38,133.88,7,2025-05-08,07/05/2026
+P1018,Instant Coffee Jar,Groceries,Unity Merchants,0.0,10.0,708.69,424.99,9,2024-10-18,08/07/2026
+P1019,Peanut Butter 400g,Groceries,Sunrise Vendors,60.0,18.0,744.99,541.39,1,2025-04-04,25/08/2026
+P1020,Mixed Spices Pack,GROCERIES,Sunrise Vendors,3.0,5.0,Rs.122.2,78.16,4,2025-03-15,17/08/2026
+P1021,Brown Sugar 1kg,Groceries,Prime Wholesale,3.0,5.0,583.57,369.24,5,2025-04-13,19/03/2026
+P1022,Office Chair,Furniture,BlueLeaf Sourcing,40.0,13.0,9141.81,6695.48,7,2024-12-08,28/07/2026
+P1023,Study Table,Furniture,Metro Logistics,60.0,18.0,,7305.01,6,2025-03-26,12/04/2026
+P1024,Bookshelf 5-Tier,Furniture,Metro Logistics,25.0,6.0,14690.01,10910.88,8,2024-10-05,23/05/2026
+P1025,Bean Bag,Furniture,Sunrise Vendors,3.0,5.0,11547.21,6424.35,2,2025-05-21,25/04/2026
+P1026,Bed Side Table,Furniture,BlueLeaf Sourcing,40.0,13.0,16455.64,10343.83,4,2025-07-06,05/08/2026
+P1027,Wardrobe 3-Door,Furniture,Global Supply Co.,-7.0,11.0,7358.37,4802.04,7,2024-12-26,03/04/2026
+P1028,Recliner Sofa,Furniture,Northline Traders,8.0,5.0,3309.03,2059.67,7,2025-01-16,03/04/2026
+P1029,Dining Table Set,Furniture,BlueLeaf Sourcing,120.0,37.0,20490.83,14514.7,6,2024-10-20,31/08/2026
+P1030,Cotton T-Shirt,Apparel,,40.0,12.0,856.35,662.08,6,2025-02-06,05/08/2026
+P1031,Denim Jeans,Apparel,Metro Logistics,3.0,5.0,Rs.3162.3,1990.67,8,2025-05-11,
+P1032,Formal Shirt,Apparel,Apex Distributors,120.0,18.0,1638.1,1235.95,4,2024-11-16,19/07/2026
+P1033,  Running Shoes  ,Apparel,Northline Traders,-4.0,5.0,1909.93,1249.77,6,2024-11-13,31/03/2026
+P1034,Winter Jacket,Apparel,Prime Wholesale,15.0,5.0,1347.25,1058.57,4,2025-01-20,23/07/2026
+P1035,Woolen Socks Pack,Apparel,Apex Distributors,180.0,61.0,2534.81,1624.58,4,2024-11-22,29/08/2026
+P1036,Leather Belt,Apparel,Northline Traders,15.0,5.0,Rs.1068.29,720.36,6,2025-02-23,03/07/2026
+P1037,Sports Cap,Apparel,Apex Distributors,40.0,6.0,369.88,259.8,3,2024-10-13,13/08/2026
+P1038,A4 Paper Ream,Stationery,Northline Traders,429.0,5.0,216.69,168.38,7,2025-06-25,19/04/2026
+P1039,Gel Pen Pack,Stationery,Global Supply Co.,15.0,5.0,357.93,285.06,7,2024-11-29,15/04/2026
+P1040,  Spiral Notebook  ,Stationery,Global Supply Co.,60.0,13.0,540.29,329.26,8,2024-11-02,31/03/2026
+P1041,Sticky Notes Set,Stationery,Unity Merchants,40.0,6.0,453.64,321.35,8,2024-10-27,10/03/2026
+P1042,Highlighter Set,Stationery,prime wholesale,8.0,5.0,589.65,371.59,5,2025-01-07,15/03/2026
+P1043,Desk Organizer,Stationery,Sunrise Vendors,0.0,10.0,425.9,306.39,4,2024-11-08,10/05/2026
+P1044,Whiteboard Marker Pack,Stationery,Northline Traders,60.0,11.0,0.0,226.33,5,2025-04-06,17/08/2026
+P1045,Stapler Heavy Duty,Stationery,sunrise vendors,120.0,21.0,492.93,318.77,1,2024-10-02,14/04/2026
+P1046,Building Blocks Set,Toys,Prime Wholesale,1078.0,39.0,951.51,550.32,4,2025-07-27,15/08/2026
+P1047,Remote Control Car,Toys,Apex Distributors,90.0,23.0,Rs.756.16,540.65,3,2025-06-26,25/08/2026
+P1048,Puzzle 1000pc,Toys,Sunrise Vendors,3.0,5.0,1394.68,851.4,1,2024-11-09,04/07/2026
+P1049,Board Game Classic,Toys,Metro Logistics,15.0,5.0,2265.98,1604.94,8,2025-04-12,17/04/2026
+P1050,Soft Plush Toy,Toys,Global Supply Co.,120.0,36.0,1856.0,1437.06,9,2025-03-28,04/05/2026
+P1051,Kids Tricycle,,Unity Merchants,8.0,5.0,1658.77,947.22,8,2025-06-12,09/08/2026
+P1052,Yoga Mat,Sports,Unity Merchants,3.0,5.0,3717.29,2053.06,9,2024-12-26,20/05/2026
+P1053,Dumbbell Set 10kg,SPORTS,BlueLeaf Sourcing,40.0,11.0,229.36,135.37,4,2025-06-10,18/08/2026
+P1054,Cricket Bat,Sports,Unity Merchants,60.0,11.0,3981.38,2412.98,9,2025-06-05,01/07/2026
+P1055,Football Size 5,Sports,Prime Wholesale,60.0,19.0,2087.32,1537.57,4,2024-10-29,11/05/2026
+P1056,Badminton Racket Pair,Sports,Global Supply Co.,3.0,5.0,4014.15,2778.1,9,2025-04-28,23/06/2026
+P1057,Skipping Rope,Sports,BlueLeaf Sourcing,200.0,41.0,1738.17,1062.02,5,2025-06-22,12/05/2026
+P1058,Resistance Bands Set,Sports,Northline Traders,90.0,22.0,5373.87,3803.54,4,2024-10-27,30/08/2026
+P1059,Non-Stick Pan Set,Home & Kitchen,Northline Traders,8.0,5.0,3299.9,2221.26,5,2025-05-06,21/05/2026
+P1060,Electric Kettle,Home & Kitchen,BlueLeaf Sourcing,60.0,11.0,1760.02,978.71,7,2025-04-12,23/05/2026
+P1061,Vacuum Flask 1L,Home & Kitchen,Apex Distributors,120.0,26.0,5190.38,4092.52,3,2025-01-17,02/09/2026
+P1062,Chopping Board Set,Home & Kitchen,Unity Merchants,25.0,8.0,380.37,297.48,9,2024-12-10,21/06/2026
+P1063,Mixer Grinder,Home & Kitchen,Unity Merchants,15.0,5.0,5310.82,4053.5,10,2025-05-12,16/07/2026
+P1064,LED Table Lamp,Home & Kitchen,Metro Logistics,-7.0,5.0,4725.91,2973.69,6,2025-07-01,07/04/2026
+P1065,Storage Container Set,Home & Kitchen,Apex Distributors,40.0,6.0,5168.0,3741.67,4,2025-07-01,21/08/2026
+P1066,Ceramic Dinner Set,Home & Kitchen,BlueLeaf Sourcing,8.0,5.0,3498.04,2789.73,5,2025-07-01,25/04/2026
+P1062,Chopping Board Set,Home & Kitchen,Unity Merchants,25.0,8.0,380.37,297.48,9,2024-12-10,21/06/2026
+P1027,Wardrobe 3-Door,Furniture,Global Supply Co.,60.0,11.0,7358.37,4802.04,7,2024-12-26,03/04/2026
+P1053,Dumbbell Set 10kg,SPORTS,BlueLeaf Sourcing,40.0,11.0,229.36,135.37,4,2025-06-10,18/08/2026
+P1021,Brown Sugar 1kg,Groceries,Prime Wholesale,3.0,5.0,583.57,369.24,5,2025-04-13,19/03/2026
+P1026,Bed Side Table,Furniture,BlueLeaf Sourcing,40.0,13.0,16455.64,10343.83,4,2025-07-06,05/08/2026
+P1035,Woolen Socks Pack,Apparel,Apex Distributors,180.0,61.0,2534.81,1624.58,4,2024-11-22,29/08/2026

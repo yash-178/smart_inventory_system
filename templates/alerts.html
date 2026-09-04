@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Alerts — Stockroom{% endblock %}
+{% block page_title %}Stock Alerts{% endblock %}
+
+{% block content %}
+<div id="alert-summary"></div>
+
+<div class="panel">
+  <div class="panel-header">
+    <div>
+      <p class="panel-title">Out of stock</p>
+      <p class="panel-desc">Products with zero units on hand — restock immediately</p>
+    </div>
+  </div>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>SKU</th><th>Product</th><th>Category</th><th>Supplier</th>
+          <th>Reorder Level</th><th>Lead Time (days)</th>
+        </tr>
+      </thead>
+      <tbody id="oos-tbody"><tr><td colspan="6" class="loading-state">Loading…</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <div>
+      <p class="panel-title">Low stock</p>
+      <p class="panel-desc">Products at or below their reorder level</p>
+    </div>
+  </div>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>SKU</th><th>Product</th><th>Category</th><th>Supplier</th>
+          <th>Stock</th><th>Reorder Level</th><th>Value</th>
+        </tr>
+      </thead>
+      <tbody id="low-stock-tbody"><tr><td colspan="7" class="loading-state">Loading…</td></tr></tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/alerts.js') }}"></script>
+{% endblock %}

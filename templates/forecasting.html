@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Forecasting — Stockroom{% endblock %}
+{% block page_title %}Demand Forecasting{% endblock %}
+
+{% block content %}
+<div class="panel">
+  <div class="panel-header">
+    <div>
+      <p class="panel-title">Forecast configuration</p>
+      <p class="panel-desc">Project future demand for a single product or a whole category</p>
+    </div>
+  </div>
+
+  <div class="forecast-controls">
+    <div class="control-group">
+      <label class="control-label" for="forecast-scope">Forecast by</label>
+      <select id="forecast-scope" class="input">
+        <option value="product">Single product</option>
+        <option value="category">Category</option>
+      </select>
+    </div>
+
+    <div class="control-group" id="product-group">
+      <label class="control-label" for="product-select">Product</label>
+      <select id="product-select" class="input" style="min-width:240px;"></select>
+    </div>
+
+    <div class="control-group" id="category-group" style="display:none;">
+      <label class="control-label" for="category-select">Category</label>
+      <select id="category-select" class="input" style="min-width:200px;"></select>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="method-select">Method</label>
+      <select id="method-select" class="input">
+        <option value="linear_regression">Linear Regression</option>
+        <option value="moving_average">Moving Average</option>
+        <option value="random_forest">Random Forest</option>
+      </select>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="periods-input">Forecast horizon (days)</label>
+      <input id="periods-input" type="number" class="input" value="30" min="1" max="180" style="width:110px;">
+    </div>
+
+    <button id="run-forecast-btn" class="btn btn--primary">Run forecast</button>
+  </div>
+
+  <div id="forecast-status"></div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <div>
+      <p class="panel-title">Historical sales vs. forecast</p>
+      <p class="panel-desc">Solid line: actual daily sales. Dashed line: projected demand.</p>
+    </div>
+  </div>
+  <div id="forecast-chart" class="chart-box" style="min-height:380px;">
+    <div class="empty-state">Choose a product or category and click "Run forecast".</div>
+  </div>
+</div>
+
+<div id="recommendation-panel"></div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/forecasting.js') }}"></script>
+{% endblock %}

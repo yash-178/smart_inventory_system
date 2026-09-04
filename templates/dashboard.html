@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — Stockroom{% endblock %}
+{% block page_title %}Dashboard{% endblock %}
+
+{% block content %}
+<div id="kpi-grid" class="kpi-grid">
+  <div class="kpi-card skeleton" style="height:84px;"></div>
+  <div class="kpi-card skeleton" style="height:84px;"></div>
+  <div class="kpi-card skeleton" style="height:84px;"></div>
+  <div class="kpi-card skeleton" style="height:84px;"></div>
+</div>
+
+<div class="grid-2">
+  <div class="panel">
+    <div class="panel-header">
+      <div>
+        <p class="panel-title">Stock by category</p>
+        <p class="panel-desc">Units on hand across each product category</p>
+      </div>
+    </div>
+    <div id="chart-category" class="chart-box"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">
+      <div>
+        <p class="panel-title">Stock status breakdown</p>
+        <p class="panel-desc">Share of catalog by availability status</p>
+      </div>
+    </div>
+    <div id="chart-status" class="chart-box"></div>
+  </div>
+</div>
+
+<div class="grid-2">
+  <div class="panel">
+    <div class="panel-header">
+      <div>
+        <p class="panel-title">Monthly sales trend</p>
+        <p class="panel-desc">Units sold per month, last 6 months of history</p>
+      </div>
+    </div>
+    <div id="chart-monthly" class="chart-box"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">
+      <div>
+        <p class="panel-title">Top-selling products</p>
+        <p class="panel-desc">By total units sold across all recorded sales</p>
+      </div>
+    </div>
+    <div id="chart-topselling" class="chart-box"></div>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <div>
+      <p class="panel-title">Data quality report</p>
+      <p class="panel-desc">Results of the most recent cleaning pass over the raw CSV sources</p>
+    </div>
+  </div>
+  <div id="quality-report">
+    <div class="loading-state">Loading data quality report…</div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% endblock %}

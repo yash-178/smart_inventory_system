@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block title %}Insights — Stockroom{% endblock %}
+{% block page_title %}Inventory Insights{% endblock %}
+
+{% block content %}
+<div id="insight-summary" class="kpi-grid">
+  <div class="kpi-card skeleton" style="height:84px;"></div>
+  <div class="kpi-card skeleton" style="height:84px;"></div>
+  <div class="kpi-card skeleton" style="height:84px;"></div>
+  <div class="kpi-card skeleton" style="height:84px;"></div>
+</div>
+
+<div class="panel insight-section">
+  <div class="panel-header">
+    <div>
+      <p class="panel-title">Restocking recommendations</p>
+      <p class="panel-desc">Products projected to run out before the supplier lead time elapses, based on recent sales velocity</p>
+    </div>
+  </div>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Product</th><th>Supplier</th><th>Stock</th><th>Lead Time (d)</th>
+          <th>Avg Daily Sales</th><th>Stockout In (days)</th><th>Recommended Reorder</th>
+        </tr>
+      </thead>
+      <tbody id="restock-tbody"><tr><td colspan="7" class="loading-state">Loading…</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="grid-2">
+  <div class="panel insight-section">
+    <div class="panel-header">
+      <div>
+        <p class="panel-title">Fast-moving products</p>
+        <p class="panel-desc">Highest sales velocity in the last 30 days</p>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th>Product</th><th>Category</th><th>Avg Daily Sales</th><th>Stock</th></tr></thead>
+        <tbody id="fast-moving-tbody"><tr><td colspan="4" class="loading-state">Loading…</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel insight-section">
+    <div class="panel-header">
+      <div>
+        <p class="panel-title">Slow-moving products</p>
+        <p class="panel-desc">Lowest sales velocity, still holding stock</p>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead><tr><th>Product</th><th>Category</th><th>Avg Daily Sales</th><th>Stock</th></tr></thead>
+        <tbody id="slow-moving-tbody"><tr><td colspan="4" class="loading-state">Loading…</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="panel insight-section">
+  <div class="panel-header">
+    <div>
+      <p class="panel-title">Overstocked products</p>
+      <p class="panel-desc">More than 90 days of supply at the current sales pace — capital tied up in slow-turning stock</p>
+    </div>
+  </div>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr><th>Product</th><th>Category</th><th>Stock</th><th>Days of Supply</th><th>Value Tied Up</th></tr>
+      </thead>
+      <tbody id="overstocked-tbody"><tr><td colspan="5" class="loading-state">Loading…</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel insight-section">
+  <div class="panel-header">
+    <div>
+      <p class="panel-title">Never sold</p>
+      <p class="panel-desc">In stock but with zero recorded sales — candidates for promotion or discontinuation</p>
+    </div>
+  </div>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Product</th><th>Category</th><th>Supplier</th><th>Stock</th></tr></thead>
+      <tbody id="never-sold-tbody"><tr><td colspan="4" class="loading-state">Loading…</td></tr></tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/insights.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Inventory — Stockroom{% endblock %}
+{% block page_title %}Inventory{% endblock %}
+
+{% block content %}
+<div class="panel">
+  <div class="field-row" style="margin-bottom:16px;">
+    <input id="search-input" type="text" class="input input--search" placeholder="Search by product name, ID, category or supplier…">
+    <select id="category-filter" class="input"><option value="all">All categories</option></select>
+    <select id="status-filter" class="input">
+      <option value="all">All statuses</option>
+      <option value="In Stock">In Stock</option>
+      <option value="Low Stock">Low Stock</option>
+      <option value="Out of Stock">Out of Stock</option>
+    </select>
+    <select id="supplier-filter" class="input"><option value="all">All suppliers</option></select>
+    <select id="page-size-select" class="input" style="max-width:120px;">
+      <option value="10">10 / page</option>
+      <option value="20" selected>20 / page</option>
+      <option value="50">50 / page</option>
+      <option value="100">100 / page</option>
+    </select>
+  </div>
+
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th class="sortable" data-sort="product_id">SKU</th>
+          <th class="sortable" data-sort="product_name">Product</th>
+          <th class="sortable" data-sort="category">Category</th>
+          <th class="sortable" data-sort="supplier">Supplier</th>
+          <th class="sortable" data-sort="stock_quantity">Qty</th>
+          <th class="sortable" data-sort="reorder_level">Reorder Lvl</th>
+          <th class="sortable" data-sort="unit_price">Unit Price</th>
+          <th class="sortable" data-sort="inventory_value">Value</th>
+          <th class="sortable" data-sort="status">Status</th>
+        </tr>
+      </thead>
+      <tbody id="inventory-tbody">
+        <tr><td colspan="9" class="loading-state">Loading inventory…</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pagination">
+    <span id="pagination-summary">—</span>
+    <div class="pagination-controls">
+      <button id="prev-page" class="page-btn">← Prev</button>
+      <span id="page-indicator" class="mono" style="padding:6px 4px;">—</span>
+      <button id="next-page" class="page-btn">Next →</button>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/inventory.js') }}"></script>
+{% endblock %}

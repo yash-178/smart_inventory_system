@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Reports — Stockroom{% endblock %}
+{% block page_title %}Reports{% endblock %}
+
+{% block content %}
+<div class="grid-2">
+  <div class="panel">
+    <div class="report-option">
+      <h3>PDF summary report</h3>
+      <p>A formatted report covering dashboard KPIs, low-stock &amp; out-of-stock alerts, fast/slow-moving products, overstocked items and restocking recommendations — ready to share or print.</p>
+      <div>
+        <button id="download-pdf-btn" class="btn btn--primary">Download PDF report</button>
+      </div>
+      <div id="pdf-status"></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="report-option">
+      <h3>Full inventory export (CSV)</h3>
+      <p>The complete cleaned inventory table — every product, stock level, price and status — as a CSV file for use in Excel or Google Sheets.</p>
+      <div>
+        <button id="download-csv-btn" class="btn btn--outline">Download CSV export</button>
+      </div>
+      <div id="csv-status"></div>
+    </div>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <div>
+      <p class="panel-title">What's included</p>
+    </div>
+  </div>
+  <ul style="margin:0; padding-left:20px; font-size:13px; color:var(--ink-600); line-height:1.9;">
+    <li>Dashboard summary — total products, categories, stock levels and inventory value</li>
+    <li>Low-stock and out-of-stock alert lists</li>
+    <li>Fast-moving and slow-moving product rankings</li>
+    <li>Overstocked products with capital tied up</li>
+    <li>Restocking recommendations with suggested reorder quantities</li>
+  </ul>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/reports.js') }}"></script>
+{% endblock %}

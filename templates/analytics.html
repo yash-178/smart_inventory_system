@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}Analytics — Stockroom{% endblock %}
+{% block page_title %}Analytics{% endblock %}
+
+{% block content %}
+<div class="grid-2">
+  <div class="panel">
+    <div class="panel-header">
+      <div>
+        <p class="panel-title">Product stock distribution</p>
+        <p class="panel-desc">Top 10 products by current stock quantity</p>
+      </div>
+    </div>
+    <div id="chart-top-stock" class="chart-box"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">
+      <div>
+        <p class="panel-title">Inventory value by category</p>
+        <p class="panel-desc">Where locked-up capital sits across the catalog</p>
+      </div>
+    </div>
+    <div id="chart-inv-value" class="chart-box"></div>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <div>
+      <p class="panel-title">Monthly sales &amp; revenue trend</p>
+      <p class="panel-desc">Units sold and revenue generated per month</p>
+    </div>
+  </div>
+  <div id="chart-monthly-revenue" class="chart-box" style="min-height:360px;"></div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <div>
+      <p class="panel-title">Supplier performance</p>
+      <p class="panel-desc">Revenue generated, average lead time and stockout rate per supplier</p>
+    </div>
+  </div>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Supplier</th>
+          <th># Products</th>
+          <th>Avg Lead Time (days)</th>
+          <th>Inventory Value</th>
+          <th>Revenue Generated</th>
+          <th>Stockout Rate</th>
+        </tr>
+      </thead>
+      <tbody id="supplier-tbody">
+        <tr><td colspan="6" class="loading-state">Loading supplier performance…</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <div>
+      <p class="panel-title">Top-selling products</p>
+      <p class="panel-desc">Ranked by total units sold, with revenue contribution</p>
+    </div>
+  </div>
+  <div id="chart-top-selling" class="chart-box" style="min-height:360px;"></div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/analytics.js') }}"></script>
+{% endblock %}

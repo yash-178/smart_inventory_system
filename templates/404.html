@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Page not found — Stockroom{% endblock %}
+{% block page_title %}Page not found{% endblock %}
+{% block content %}
+<div class="panel" style="text-align:center; padding:60px 20px;">
+  <p class="panel-title" style="font-size:18px;">This page doesn't exist.</p>
+  <p class="panel-desc">Check the URL, or head back to the dashboard.</p>
+  <p style="margin-top:18px;"><a href="{{ url_for('dashboard_page') }}" class="btn btn--primary" style="display:inline-block;">Go to dashboard</a></p>
+</div>
+{% endblock %}
