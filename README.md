@@ -76,45 +76,6 @@ inventory_system/
 - Python 3.10+
 - pip
 
-### Installation
-
-1. **Clone or extract the project**
-   ```bash
-   cd inventory_system
-   ```
-
-2. **Create a virtual environment** (optional but recommended)
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
-   ```bash
-   pip install Flask==3.1.3 pandas==3.0.2 numpy==2.4.4 scikit-learn==1.8.0 reportlab==4.4.10
-   ```
-
-4. **Generate sample data** (automatic on first run, but you can pre-generate)
-   ```bash
-   python3 generate_data.py
-   ```
-
-## Running the Application
-
-```bash
-python3 app.py
-```
-
-The application will start on `http://127.0.0.1:5000`
-
-- **Dashboard**: http://127.0.0.1:5000/
-- **Inventory**: http://127.0.0.1:5000/inventory
-- **Analytics**: http://127.0.0.1:5000/analytics
-- **Forecasting**: http://127.0.0.1:5000/forecasting
-- **Alerts**: http://127.0.0.1:5000/alerts
-- **Insights**: http://127.0.0.1:5000/insights
-- **Reports**: http://127.0.0.1:5000/reports
-
 ## Feature Walkthrough
 
 ### 1. Dashboard
